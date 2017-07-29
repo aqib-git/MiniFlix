@@ -6,7 +6,7 @@ import { Share } from 'react-twitter-widgets'
 
 class DisplayImages extends Component{
 	state = {images : []};
-	
+
 	getImages() {
 		axios.get('http://res.cloudinary.com/aqibpandit/image/list/miniflix.json')
           .then(res => {
