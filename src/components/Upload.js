@@ -18,7 +18,7 @@ class Upload extends Component {
 
     return (
       <div>
-        <Nav />
+        <Nav {...this.props} />
         <h3 className="text-center">Upload Your Media in a Jiffy</h3>
         <hr/>
 

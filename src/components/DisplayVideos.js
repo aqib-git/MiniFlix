@@ -29,7 +29,7 @@ class Display extends Component {
 
     return (
       <div>
-        <Nav />
+        <Nav {...this.props} />
         <h3 className="text-center"> Latest Videos on Miniflix </h3>
         <hr/>
 
