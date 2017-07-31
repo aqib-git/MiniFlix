@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import { isLoggedIn } from './utils/AuthService';
 import Upload from './components/Upload';
-import DisplayVideos from './components/DisplayVideos';
-import DisplayImages from './components/DisplayImages';
+import CloudinaryVideos from './containers/CloudinaryVideos';
+import CloudinaryImages from './containers/CloudinaryImages';
 import Callback from './components/Callback';
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom';
+
 
 
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <Route  exact path="/" component={DisplayVideos}/>
-        <Route path="/images" component={DisplayImages}/>
+        <Route  exact path="/" component={CloudinaryVideos}/>
+        <Route path="/images" component={CloudinaryImages}/>
         <PrivateRoute path="/upload" component={Upload} />
         <Route path="/callback" component={Callback} />
     </div>
